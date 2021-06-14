@@ -24,13 +24,14 @@ public class MainActivity extends AppCompatActivity {
         buttonFechar = findViewById(R.id.buttonFechar);
         buttonIr = findViewById(R.id.buttonIr);
         editTextTextURL = findViewById(R.id.editTextTextURL);
-        webview = (WebView) findViewById (R.id.webview);
+        webview = findViewById(R.id.webview);
 
         //Inicialização do textView com o endereço
         editTextTextURL.setText("https://www.google.com");
     }
 
     public void onClickBotaoIr(View v){
+        //Abre a página no webview
         webview.loadUrl(editTextTextURL.getText().toString());
     }
 
